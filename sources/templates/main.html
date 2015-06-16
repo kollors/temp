@@ -1,0 +1,38 @@
+<button ng-click="createVerticalSection()">createVerticalSection</button>
+<button ng-click="createHorizontalSection()">createHorizontalSection</button>
+<button ng-click="createCrossSection()">createCrossSection</button>
+<hr>
+<canvas canvas="" id="canvas" width="1000" height="400" style="border: 1px solid #000"></canvas>
+<hr>
+<button ng-click="addVerticalColumn()">addVerticalColumn</button>
+<button ng-click="addHorizontalColumn()">addHorizontalColumn</button>
+<button ng-click="addCross()">addCross</button>
+<br>
+<label>
+    <span>X</span>
+    <input type="number" ng-model="canvas.area.x">
+</label>
+<label>
+    <span>Y</span>
+    <input type="number" ng-model="canvas.area.y">
+</label>
+<br>
+<label>
+    <span>Width</span>
+    <input type="number" ng-model="canvas.area.width" min="1" step="10">
+</label>
+<label>
+    <span>Height</span>
+    <input type="number" ng-model="canvas.area.height" min="1" step="10">
+</label>
+<hr>
+Объект
+<br>
+<label>
+    <span>X</span>
+    <input type="number" ng-model="canvas.object.x" min="0" step="10">
+</label>
+<label>
+    <span>Y</span>
+    <input type="number" ng-model="canvas.object.y" min="0" step="10">
+</label>

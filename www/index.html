@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru" ng-app="ankular">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="application/app.min.css" rel="stylesheet">
+    <base href="/">
+</head>
+<body ng-controller="IndexController as index" ng-cloak="">
+{{index.welcome}}
+<a ng-href="/main">Main</a> | <a ng-href="/home">Home</a>
+<section ng-view=""></section>
+<script src="libraries/lib.min.js"></script>
+<script src="application/app.min.js"></script>
+</body>
+</html>

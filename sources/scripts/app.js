@@ -1,0 +1,1 @@
+angular.module("ankular", ["ngAnimate", "ngRoute", "ngTouch"]);
